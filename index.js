@@ -68,15 +68,28 @@ console.log("")
 console.log('Ejercicio b) Responder: ¿Hay alguna pizza que valga menos de $600?');
 console.log("")
 
-const precioMenorA = (precio) => {
-  pizzas.forEach(pizza => {
-    if (pizza.precio < precio){
-      console.log(`La ${pizza.nombre} tiene un valor menor a $${precio}`);
-    };
-  })
-}
+const pizzaMenorA600 = pizzas.some((pizza) => pizza.precio < 600);
 
-precioMenorA(600);
+const logPizzaMenor600 = () => {
+  if (pizzaMenorA600===true){
+    console.log("Hay pizza(s) con un valor menor a $600");
+  } else{
+    console.log("No hay pizza(s) con un valor menor a $600");
+  };
+};
+
+logPizzaMenor600();
+
+
+// const precioMenorA = (precio) => {
+//   pizzas.forEach(pizza => {
+//     if (pizza.precio < precio){
+//       console.log(`La ${pizza.nombre} tiene un valor menor a $${precio}`);
+//     };
+//   })
+// }
+
+// precioMenorA(600);
 
 
 // --------EJERCICIO C--------
