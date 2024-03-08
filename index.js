@@ -80,18 +80,6 @@ const logPizzaMenor600 = () => {
 
 logPizzaMenor600();
 
-
-// const precioMenorA = (precio) => {
-//   pizzas.forEach(pizza => {
-//     if (pizza.precio < precio){
-//       console.log(`La ${pizza.nombre} tiene un valor menor a $${precio}`);
-//     };
-//   })
-// }
-
-// precioMenorA(600);
-
-
 // --------EJERCICIO C--------
 console.log("")
 console.log('Ejercicio c) El nombre de cada pizza con su respectivo precio.');
